@@ -4,10 +4,10 @@ import numpy as np
 import plotly.express as px
 from datetime import datetime, timedelta
 
-invoices_df = pd.read_excel(r"D:\Daily\Journal Entry (account.move).xlsx")
-payments_df = pd.read_excel(r"D:\Daily\Payments (account.payment).xlsx")
-customers_df = pd.read_excel(r"D:\Daily\All customers.xlsx")
-credit_df = pd.read_excel(r"D:\Daily\Credit notes.xlsx")
+invoices_df = pd.read_excel("Journal Entry (account.move).xlsx")
+payments_df = pd.read_excel("Payments (account.payment).xlsx")
+customers_df = pd.read_excel("All customers.xlsx")
+credit_df = pd.read_excel("Credit notes.xlsx")
 
 today = datetime.today()
 yesterday = today - timedelta(days=1)
